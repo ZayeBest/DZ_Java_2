@@ -24,5 +24,29 @@ public class Main {
     System.out.println("число 2 в двоичной системе это: "+Integer.toBinaryString(x1));
     System.out.println("число 23 в двоичной системе это: "+Integer.toBinaryString(x2));
     System.out.println("число 15 в двоичной системе это: "+Integer.toBinaryString(x3));
+    System.out.println();
+
+    int i = 5;
+    i = i++;
+    System.out.println(i);
+        //в данном случае просто была выполнена операция "++"
+        // на чем все и закончилось (i = i) ++;
+        // result = 5 (без ++) = 5
+    i = 5;
+    i = i++ + i++;
+    System.out.println(i);
+        //в данном случае выполняется операция добавления
+        //между числами i++ и i
+        //   result = (5++) + 5 (без ++) = 6 + 5 = 11
+    i = 5;
+    i = i++ + ++i;
+    System.out.println(i);
+        // result = (5++) + (++5) = 6 + 6 = 12
+    i = 10;
+    i = ++i + ++i;
+    System.out.println(i);
+        //result = (++5) + (++6) = 6 + 7 = 13
+
+
     }
 }
